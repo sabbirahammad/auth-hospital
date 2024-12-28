@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Outfit;
+}
+.active hr{
+    @apply block
+}
+
+::-webkit-scrollbar{
+    @apply hidden
+}
+
+  
+/* @keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .animate-scroll {
+    display: inline-flex;
+    animation: scroll 45s linear infinite;
+  }
+   */
+
+   @keyframes scroll {
+    0% { transform: translateX(10%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .animate-scroll {
+    display: inline-flex;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  
+  

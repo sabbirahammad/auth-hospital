@@ -1,0 +1,41 @@
+const mongoose = require('mongoose');
+
+const userSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true,
+    },
+    email: {
+        type: String,
+        required: true,
+        default:"data:image/webp;base64,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"
+    },
+    password: {
+        type: String,
+        required: true,
+    },
+    image: {
+        type: String,
+        
+    },
+    address: {
+        type: Object,
+        default:{line1:"",line2:""}
+    },
+   gander:{
+    type:String,
+    default:'not Selected'
+   },
+   dob:{
+    type:String,
+    default:'not Selected'
+   },
+   phone:{
+    type:String,
+    default:'000000'
+   }
+});
+
+const userModel = mongoose.models.user || mongoose.model('user', userSchema);
+
+module.exports = userModel;
